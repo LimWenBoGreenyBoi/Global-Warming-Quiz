@@ -1,106 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spelling Bee Game</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Climate Learning Hub</title>
+<link rel="stylesheet" href="quiz.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <h1>🐝 Spelling Bee</h1>
-            </div>
-            <nav>
-                <button id="menu-toggle" class="menu-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul>
-                    <li><a href="#" class="active">Play</a></li>
-                    <li><a href="#">Rules</a></li>
-                    <li><a href="#">Rankings</a></li>
-                    <li><a href="#">Archive</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <div class="container">
-            <div class="game-container">
-                <div class="game-header">
-                    <div class="rank-display">
-                        <span class="rank-label">Rank:</span>
-                        <span id="current-rank">Beginner</span>
-                    </div>
-                    <div class="score-display">
-                        <span class="score-label">Score:</span>
-                        <span id="current-score">0</span>
-                    </div>
-                </div>
-
-                <div class="progress-container">
-                    <div class="progress-bar">
-                        <div id="progress" class="progress"></div>
-                    </div>
-                </div>
-
-                <div id="message" class="message"></div>
-
-                <div class="word-display">
-                    <div id="current-word" class="current-word"></div>
-                </div>
-
-                <div class="hive-container">
-                    <div class="hive">
-                        <div class="cell center" data-letter="S">S</div>
-                        <div class="cell outer" data-letter="T">T</div>
-                        <div class="cell outer" data-letter="A">A</div>
-                        <div class="cell outer" data-letter="R">R</div>
-                        <div class="cell outer" data-letter="P">P</div>
-                        <div class="cell outer" data-letter="I">I</div>
-                        <div class="cell outer" data-letter="N">N</div>
-                    </div>
-                </div>
-
-                <div class="controls">
-                    <button id="delete-btn" class="control-btn">Delete</button>
-                    <button id="shuffle-btn" class="control-btn">Shuffle</button>
-                    <button id="enter-btn" class="control-btn primary">Enter</button>
-                    <button id="hint-btn" class="control-btn">Hint</button>
-                </div>
-            </div>
-
-            <div class="info-panel">
-                <div class="panel-header">
-                    <h2>Found Words <span id="word-count">(0)</span></h2>
-                </div>
-                <div id="words-list" class="words-list">
-                    <!-- Found words will be added here dynamically -->
-                </div>
-                <div class="game-info">
-                    <p>Find as many words as you can using the letters in the hive.</p>
-                    <ul>
-                        <li>Words must be at least 4 letters long</li>
-                        <li>Words must include the center letter</li>
-                        <li>Letters can be used more than once</li>
-                        <li>Find the pangram that uses all 7 letters!</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 Spelling Bee Game. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+<main>
+  <div class="card">
+    <h1>Climate Learning Hub</h1>
+    <p class="question">Explore global warming basics and test your understanding with an interactive quiz.</p>
+    <div class="controls" style="margin-top:12px">
+      <a href="global-warming-quiz.html"><button class="primary">Open Global Warming Quiz</button></a>
+      <a href="global-warming-quiz.html"><button>Read About Global Warming</button></a>
+      <a href="http://localhost:8501/"><button>Open Q&A Board</button></a>
+    </div>
+    <div class="progress" style="margin-top:16px">Includes an overview, how-to guide, and a 16-question quiz.</div>
+  </div>
+</main>
 </body>
 </html>
