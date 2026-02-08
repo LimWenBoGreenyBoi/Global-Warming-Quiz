@@ -1,413 +1,330 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Global Warming Quiz (Prototype)</title>
-<link rel="stylesheet" href="quiz.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Global Warming Quiz (Prototype)</title>
+  <link rel="stylesheet" href="quiz.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
-<main>
-  <div class="card" id="quiz">
-    <h1>Global Warming Quiz</h1>
-    <div class="muted" id="meta"></div>
+  <main>
+    <div class="card" id="quiz">
+      <h1>Global Warming Quiz</h1>
+      <div class="muted" id="meta"></div>
 
-    <div id="screen-info">
-      <h2>About Global Warming</h2>
-      <p class="question">Global warming is the warming of the climate. This change is caused by the rise of greenhouse gases, which are gases that trap heat from the sun from going back into the atmosphere, therefore increasing the temperature of the Earth as a whole. Why are scientists so sure that humans are causing this rise in temperature? Well, through radiometric dating from ocean sediment, gas content from ancient ice sheets and a multitude of other techniques, the recent rise of temperature has been coupled with the recent rise in temperature. Ever since we started using fossil fuels and oil from the Industrial Revolution, greenhouse gas content has been rising.</p>
-      <h2>What Are Greenhouse Gases?</h2>
-      <ul>
-        <li><strong>Carbon dioxide (CO₂):</strong> released by burning coal, oil, and gas.</li>
-        <li><strong>Methane (CH₄):</strong> from fossil fuel production, livestock, and waste.</li>
-        <li><strong>Nitrous oxide (N₂O):</strong> from fertilizers and industrial processes.</li>
-      </ul>
-      <h2>Causes</h2>
-      <ul>
-        <li>Burning fossil fuels for electricity, heat, and transportation increases CO₂.</li>
-        <li>Deforestation reduces carbon uptake and releases stored carbon.</li>
-        <li>Industrial processes and agriculture emit methane and nitrous oxide.</li>
-        <li>Waste management and food systems add additional greenhouse gases.</li>
-      </ul>
-      <h2>Evidence</h2>
-      <ul>
-        <li>Ice cores and ocean sediments record past temperatures and greenhouse gases.</li>
-        <li>Records show rising global surface and ocean temperatures.</li>
-        <li>Glaciers melt, sea levels rise, and seasons shift across regions.</li>
-      </ul>
-      <h2>Industrial Revolution and Trends</h2>
-      <ul>
-        <li>Since the late 1700s, rapid growth in fossil fuel use increased CO₂ markedly.</li>
-        <li>Atmospheric CO₂ rose far above natural ranges observed in ice core records.</li>
-        <li>Human-caused emissions outpace natural sinks, leading to accumulation in air and ocean.</li>
-        <li>Radiometric dating and sediment analyses help align changes with human activity.</li>
-      </ul>
-      <h2>Impacts</h2>
-      <ul>
-        <li>More frequent and intense heat waves and wildfires.</li>
-        <li>Sea-level rise increases coastal flooding and erosion.</li>
-        <li>Heavier downpours and droughts affect water and food security.</li>
-        <li>Ocean warming and acidification stress marine ecosystems.</li>
-      </ul>
-      <h2>Solutions</h2>
-      <ul>
-        <li>Cut fossil fuel use through efficiency and clean energy.</li>
-        <li>Electrify transport and buildings; improve public transit.</li>
-        <li>Protect and restore forests, wetlands, and soils.</li>
-        <li>Innovate and adopt low-carbon industry and materials.</li>
-      </ul>
-      <h2>What You Can Do</h2>
-      <ul>
-        <li>Conserve energy at home and choose efficient appliances.</li>
-        <li>Reduce car trips, such as walking, biking, carpooling, or using public transit.</li>
-        <li>Cut waste and recycle.</li>
-        <li>Support policies, companies, and communities advancing climate solutions.</li>
-      </ul>
-      <h2>Key Terms</h2>
-      <ul>
-        <li><strong>Radiative forcing:</strong> change in Earth’s energy balance from GHGs.</li>
-        <li><strong>Mitigation:</strong> actions that reduce greenhouse gas emissions.</li>
-        <li><strong>Adaptation:</strong> actions that manage climate impacts and risks.</li>
-      </ul>
-      <div class="controls" style="margin-top:12px">
-        <button id="start" class="primary">Start Quiz</button>
-        <a href="index.html"><button>Main Menu</button></a>
+      <div id="screen-info">
+        <h2>About Global Warming</h2>
+        <p class="question">Global warming is the warming of the climate. This change is caused by the rise of
+          greenhouse gases, which are gases that trap heat from the sun from going back into the atmosphere, therefore
+          increasing the temperature of the Earth as a whole. Why are scientists so sure that humans are causing this
+          rise in temperature? Well, through radiometric dating from ocean sediment, gas content from ancient ice sheets
+          and a multitude of other techniques, the recent rise of temperature has been coupled with the recent rise in
+          temperature. Ever since we started using fossil fuels and oil from the Industrial Revolution, greenhouse gas
+          content has been rising.</p>
+        <h2>What Are Greenhouse Gases?</h2>
+        <ul>
+          <li><strong>Carbon dioxide (CO₂):</strong> released by burning coal, oil, and gas.</li>
+          <li><strong>Methane (CH₄):</strong> from fossil fuel production, livestock, and waste.</li>
+          <li><strong>Nitrous oxide (N₂O):</strong> from fertilizers and industrial processes.</li>
+        </ul>
+        <h2>Causes</h2>
+        <ul>
+          <li>Burning fossil fuels for electricity, heat, and transportation increases CO₂.</li>
+          <li>Deforestation reduces carbon uptake and releases stored carbon.</li>
+          <li>Industrial processes and agriculture emit methane and nitrous oxide.</li>
+          <li>Waste management and food systems add additional greenhouse gases.</li>
+        </ul>
+        <h2>Evidence</h2>
+        <ul>
+          <li>Ice cores and ocean sediments record past temperatures and greenhouse gases.</li>
+          <li>Records show rising global surface and ocean temperatures.</li>
+          <li>Glaciers melt, sea levels rise, and seasons shift across regions.</li>
+        </ul>
+        <h2>Industrial Revolution and Trends</h2>
+        <ul>
+          <li>Since the late 1700s, rapid growth in fossil fuel use increased CO₂ markedly.</li>
+          <li>Atmospheric CO₂ rose far above natural ranges observed in ice core records.</li>
+          <li>Human-caused emissions outpace natural sinks, leading to accumulation in air and ocean.</li>
+          <li>Radiometric dating and sediment analyses help align changes with human activity.</li>
+        </ul>
+        <h2>Impacts</h2>
+        <ul>
+          <li>More frequent and intense heat waves and wildfires.</li>
+          <li>Sea-level rise increases coastal flooding and erosion.</li>
+          <li>Heavier downpours and droughts affect water and food security.</li>
+          <li>Ocean warming and acidification stress marine ecosystems.</li>
+        </ul>
+        <h2>Solutions</h2>
+        <ul>
+          <li>Cut fossil fuel use through efficiency and clean energy.</li>
+          <li>Electrify transport and buildings; improve public transit.</li>
+          <li>Protect and restore forests, wetlands, and soils.</li>
+          <li>Innovate and adopt low-carbon industry and materials.</li>
+        </ul>
+        <h2>What You Can Do</h2>
+        <ul>
+          <li>Conserve energy at home and choose efficient appliances.</li>
+          <li>Reduce car trips, such as walking, biking, carpooling, or using public transit.</li>
+          <li>Cut waste and recycle.</li>
+          <li>Support policies, companies, and communities advancing climate solutions.</li>
+        </ul>
+        <h2>Key Terms</h2>
+        <ul>
+          <li><strong>Radiative forcing:</strong> change in Earth’s energy balance from GHGs.</li>
+          <li><strong>Mitigation:</strong> actions that reduce greenhouse gas emissions.</li>
+          <li><strong>Adaptation:</strong> actions that manage climate impacts and risks.</li>
+        </ul>
+        <div class="controls" style="margin-top:12px">
+          <button id="start" class="primary">Start Quiz</button>
+          <a href="/"><button>Main Menu</button></a>
+        </div>
+      </div>
+
+      <div id="screen-how" hidden>
+        <h2>How To Take This Quiz</h2>
+        <ul>
+          <li>Read each question carefully and select one best answer.</li>
+          <li>Click <strong>Next</strong> to move forward; on the last question click <strong>Submit</strong>.</li>
+          <li>Use your understanding from the info section; avoid overthinking.</li>
+          <li>After results, you can press <strong>Restart</strong> to review the info and try again.</li>
+        </ul>
+        <h2>Why This Quiz Matters</h2>
+        <ul>
+          <li>Checks key concepts about causes, evidence, impacts, and solutions.</li>
+          <li>Reinforces learning from your overview of global warming.</li>
+          <li>Provides quick feedback to guide further study.</li>
+        </ul>
+        <div class="controls" style="margin-top:12px">
+          <button id="begin" class="primary">Begin Quiz</button>
+        </div>
+      </div>
+
+      <div id="screen-quiz">
+        <div class="question" id="question"></div>
+        <form class="options" id="options" aria-labelledby="question"></form>
+        <div class="controls">
+          <button id="next" class="primary" disabled>Next</button>
+          <button id="submit" disabled>Submit</button>
+        </div>
+        <div class="progress" id="progress"></div>
+        <div id="qmap" class="qmap" aria-label="Question map"></div>
+      </div>
+
+      <div id="screen-result" hidden>
+        <h2>Results</h2>
+        <div class="score" id="score"></div>
+        <div class="result" id="feedback"></div>
+        <div class="pill" id="time"></div>
+        <h3>Detailed Review</h3>
+        <ol id="breakdown" class="breakdown"></ol>
+        <h3>Afterthought: Keep Learning</h3>
+        <p class="muted">To deepen your understanding of climate change, explore these reputable resources:</p>
+        <ul>
+          <li><a
+              href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiDya_f7ZiRAxU0SmwGHTRbKggQFnoECB8QAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FClimate_change&usg=AOvVaw0QElEUrXYC9n1MPJ6uim50&opi=89978449"
+              target="_blank" rel="noopener noreferrer">Wikipedia: Climate change</a></li>
+          <li><a
+              href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiDya_f7ZiRAxU0SmwGHTRbKggQFnoECDUQAQ&url=https%3A%2F%2Fwww.un.org%2Fen%2Fclimatechange%2Fwhat-is-climate-change&usg=AOvVaw3ZCojnOsG8aouazS672Kbr&opi=89978449"
+              target="_blank" rel="noopener noreferrer">United Nations: What Is Climate Change?</a></li>
+          <li><a
+              href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiDya_f7ZiRAxU0SmwGHTRbKggQFnoECDkQAQ&url=https%3A%2F%2Fwww.nrdc.org%2Fstories%2Fglobal-warming-101&usg=AOvVaw2HbTjOiDUqepQS70N8oBEd&opi=89978449"
+              target="_blank" rel="noopener noreferrer">NRDC: Global Warming 101</a></li>
+        </ul>
+        <div class="controls" style="margin-top:16px">
+          <button id="restart" class="primary">Restart</button>
+        </div>
       </div>
     </div>
+  </main>
 
-    <div id="screen-how" hidden>
-      <h2>How To Take This Quiz</h2>
-      <ul>
-        <li>Read each question carefully and select one best answer.</li>
-        <li>Click <strong>Next</strong> to move forward; on the last question click <strong>Submit</strong>.</li>
-        <li>Use your understanding from the info section; avoid overthinking.</li>
-        <li>After results, you can press <strong>Restart</strong> to review the info and try again.</li>
-      </ul>
-      <h2>Why This Quiz Matters</h2>
-      <ul>
-        <li>Checks key concepts about causes, evidence, impacts, and solutions.</li>
-        <li>Reinforces learning from your overview of global warming.</li>
-        <li>Provides quick feedback to guide further study.</li>
-      </ul>
-      <div class="controls" style="margin-top:12px">
-        <button id="begin" class="primary">Begin Quiz</button>
-      </div>
-    </div>
+  <script>
+    let questions = []
+    let explanations = []
 
-    <div id="screen-quiz">
-      <div class="question" id="question"></div>
-      <form class="options" id="options" aria-labelledby="question"></form>
-      <div class="controls">
-        <button id="next" class="primary" disabled>Next</button>
-        <button id="submit" disabled>Submit</button>
-      </div>
-      <div class="progress" id="progress"></div>
-      <div id="qmap" class="qmap" aria-label="Question map"></div>
-    </div>
+    let index = 0
+    let correct = 0
+    let start = performance.now()
+    let selected = null
+    let userAnswers = []
 
-    <div id="screen-result" hidden>
-      <h2>Results</h2>
-      <div class="score" id="score"></div>
-      <div class="result" id="feedback"></div>
-      <div class="pill" id="time"></div>
-      <h3>Detailed Review</h3>
-      <ol id="breakdown" class="breakdown"></ol>
-      <h3>Afterthought: Keep Learning</h3>
-      <p class="muted">To deepen your understanding of climate change, explore these reputable resources:</p>
-      <ul>
-        <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiDya_f7ZiRAxU0SmwGHTRbKggQFnoECB8QAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FClimate_change&usg=AOvVaw0QElEUrXYC9n1MPJ6uim50&opi=89978449" target="_blank" rel="noopener noreferrer">Wikipedia: Climate change</a></li>
-        <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiDya_f7ZiRAxU0SmwGHTRbKggQFnoECDUQAQ&url=https%3A%2F%2Fwww.un.org%2Fen%2Fclimatechange%2Fwhat-is-climate-change&usg=AOvVaw3ZCojnOsG8aouazS672Kbr&opi=89978449" target="_blank" rel="noopener noreferrer">United Nations: What Is Climate Change?</a></li>
-        <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiDya_f7ZiRAxU0SmwGHTRbKggQFnoECDkQAQ&url=https%3A%2F%2Fwww.nrdc.org%2Fstories%2Fglobal-warming-101&usg=AOvVaw2HbTjOiDUqepQS70N8oBEd&opi=89978449" target="_blank" rel="noopener noreferrer">NRDC: Global Warming 101</a></li>
-      </ul>
-      <div class="controls" style="margin-top:16px">
-        <button id="restart" class="primary">Restart</button>
-      </div>
-    </div>
-  </div>
-</main>
-
-<script>
-let questions = [
-  {
-    q: "What is the main driver of recent global warming?",
-    options: ["Changes in solar output", "Human emissions of greenhouse gases", "Natural orbital cycles", "Volcanic aerosols"],
-    answer: 1
-  },
-  {
-    q: "Which gas contributes most to human-caused warming?",
-    options: ["Ozone", "Nitrous oxide", "Carbon dioxide", "Water vapor"],
-    answer: 2
-  },
-  {
-    q: "What sector is a major source of CO₂ emissions?",
-    options: ["Residential heating", "Transportation", "Forestry", "Agriculture only"],
-    answer: 1
-  },
-  {
-    q: "Which solution reduces greenhouse gas emissions?",
-    options: ["Expanding coal plants", "Energy efficiency and renewables", "Removing wetlands", "Increasing flaring"],
-    answer: 1
-  },
-  {
-    q: "What is a key effect of global warming?",
-    options: ["Stable sea levels", "More frequent heat waves", "Decreased ocean heat content", "No change in precipitation"],
-    answer: 1
-  },
-  {
-    q: "Which factor currently contributes strongly to sea-level rise?",
-    options: ["Thermal expansion of warming oceans", "Tectonic uplift", "River sediment deposition", "Soil erosion"],
-    answer: 0
-  },
-  {
-    q: "Ocean acidification is primarily caused by?",
-    options: ["Dissolved CO₂ forming carbonic acid", "Plastic pollution", "Nitrogen runoff", "Decreased salinity"],
-    answer: 0
-  },
-  {
-    q: "What increases Earth's radiative forcing?",
-    options: ["Higher atmospheric CO₂", "Increased volcanic aerosols", "Reduced solar output", "Greater cloud albedo"],
-    answer: 0
-  },
-  {
-    q: "Which personal action most reduces emissions?",
-    options: ["Switching to renewable electricity", "Buying bottled water", "Increasing air conditioning use", "Longer daily commutes"],
-    answer: 0
-  },
-  {
-    q: "A major source of methane emissions is?",
-    options: ["Wetlands and livestock", "Desert sands", "Polar sea ice", "Granite bedrock"],
-    answer: 0
-  },
-  {
-    q: "How does deforestation affect climate?",
-    options: ["Reduces carbon sinks and alters albedo", "Raises global rainfall instantly", "Lowers atmospheric CO₂", "Cools the oceans"],
-    answer: 0
-  },
-  {
-    q: "Sulfate aerosols tend to?",
-    options: ["Cool by reflecting sunlight", "Warm by trapping infrared", "Have no climate effect", "Increase greenhouse gas concentrations"],
-    answer: 0
-  },
-  {
-    q: "The carbon budget refers to?",
-    options: ["Allowable emissions to meet warming targets", "Government spending plans", "Household energy bills", "Forest area worldwide"],
-    answer: 0
-  },
-  {
-    q: "Permafrost thaw can lead to?",
-    options: ["Release of stored methane and CO₂", "More reflective sea ice", "Immediate global rainfall increase", "Soil stabilization"],
-    answer: 0
-  },
-  {
-    q: "The Paris Agreement aims to?",
-    options: ["Limit warming well below 2°C", "Eliminate all GHGs by 2020", "Stop earthquakes globally", "Ban solar farms"],
-    answer: 0
-  },
-  {
-    q: "Which sector transition most cuts CO₂ quickly?",
-    options: ["Decarbonizing power with renewables", "Expanding coal mining", "Increasing flaring", "Reducing public transit"],
-    answer: 0
-  }
-]
-
-let explanations = [
-  "Human emissions of greenhouse gases (especially CO₂) dominate recent warming; solar and natural cycles cannot explain the sustained trend since the mid‑20th century.",
-  "CO₂ contributes most due to its high concentration and long lifetime; water vapor is a feedback, not the primary driver.",
-  "Transportation burns fossil fuels at scale, making it a major source of CO₂ alongside power generation.",
-  "Efficiency and renewable energy reduce fossil fuel use and emissions; coal expansion increases emissions.",
-  "Warming increases the frequency and intensity of heat waves; sea levels and ocean heat content rise, not fall.",
-  "As water warms it expands, raising sea level; this thermal expansion is a key contributor alongside ice melt.",
-  "CO₂ dissolves into seawater forming carbonic acid, lowering pH—this is the root of ocean acidification.",
-  "Higher atmospheric CO₂ increases radiative forcing by trapping more outgoing longwave radiation.",
-  "Switching to renewable electricity directly cuts emissions associated with power use.",
-  "Natural wetlands and livestock are major methane sources; deserts and ice are not.",
-  "Deforestation reduces carbon sinks and changes surface reflectivity (albedo), contributing to warming.",
-  "Sulfate aerosols scatter sunlight, producing a cooling effect that partially offsets greenhouse warming.",
-  "The carbon budget is the remaining allowable emissions to meet temperature targets (e.g., 1.5–2°C).",
-  "Thawing permafrost releases previously trapped methane and CO₂, amplifying warming.",
-  "The Paris Agreement’s central goal is to limit warming well below 2°C, pursuing 1.5°C.",
-  "Rapid CO₂ cuts come from decarbonizing electricity generation via renewables and clean technologies."
-]
-
-let index = 0
-let correct = 0
-let start = performance.now()
-let selected = null
-let userAnswers = []
-
-async function loadQuestions(opts = {}) {
-  const params = new URLSearchParams()
-  if (opts.count) params.set('count', String(opts.count))
-  if (opts.seed) params.set('seed', String(opts.seed))
-  const url = `/api/quiz/global-warming${params.toString() ? ('?' + params.toString()) : ''}`
-  try {
-    const res = await fetch(url, { cache: 'no-store' })
-    if (!res.ok) throw new Error('Failed to load questions')
-    const data = await res.json()
-    const qs = data.questions || []
-    questions = qs.map(q => ({ q: q.q, options: q.options, answer: q.answer }))
-    explanations = qs.map(q => q.explanation || '')
-  } catch (err) {
-    // Fallback to embedded questions if API not available
-    console.warn('Using embedded questions (API unavailable):', err)
-  }
-}
-
-const elQ = document.getElementById('question')
-const elOpts = document.getElementById('options')
-const elNext = document.getElementById('next')
-const elSubmit = document.getElementById('submit')
-const elProgress = document.getElementById('progress')
-const elMeta = document.getElementById('meta')
-const elScreenInfo = document.getElementById('screen-info')
-const elScreenHow = document.getElementById('screen-how')
-const elScreenQuiz = document.getElementById('screen-quiz')
-const elScreenResult = document.getElementById('screen-result')
-const elScore = document.getElementById('score')
-const elFeedback = document.getElementById('feedback')
-const elTime = document.getElementById('time')
-const elRestart = document.getElementById('restart')
-const elStart = document.getElementById('start')
-const elBegin = document.getElementById('begin')
-const elBreakdown = document.getElementById('breakdown')
-const elMap = document.getElementById('qmap')
-
-function renderMap() {
-  const total = questions.length
-  const items = []
-  for (let i = 0; i < total; i++) {
-    const done = userAnswers[i] != null
-    const current = i === index
-    const classes = ['item']
-    if (done) classes.push('done')
-    if (current) classes.push('current')
-    items.push(`<span class="${classes.join(' ')}" title="Question ${i+1}">${i+1}</span>`)
-  }
-  elMap.innerHTML = items.join(' ')
-}
-
-function renderQuestion() {
-  const q = questions[index]
-  elQ.textContent = q.q
-  elOpts.innerHTML = ''
-  selected = null
-  const isLast = index === questions.length - 1
-  elNext.hidden = isLast
-  elNext.disabled = true
-  elSubmit.disabled = true
-  q.options.forEach((opt, i) => {
-    const id = `q${index}-o${i}`
-    const wrap = document.createElement('label')
-    wrap.className = 'option'
-    const input = document.createElement('input')
-    input.type = 'radio'
-    input.name = 'option'
-    input.value = String(i)
-    input.id = id
-    const text = document.createElement('span')
-    text.textContent = opt
-    wrap.appendChild(input)
-    wrap.appendChild(text)
-    elOpts.appendChild(wrap)
-    input.addEventListener('change', () => {
-      selected = i
-      const isLast = index === questions.length - 1
-      if (isLast) {
-        elSubmit.disabled = false
-      } else {
-        elNext.disabled = false
-        elSubmit.disabled = true
+    async function loadQuestions(opts = {}) {
+      const params = new URLSearchParams()
+      if (opts.count) params.set('count', String(opts.count))
+      if (opts.seed) params.set('seed', String(opts.seed))
+      const url = `/api/quiz/global-warming${params.toString() ? ('?' + params.toString()) : ''}`
+      try {
+        const res = await fetch(url, { cache: 'no-store' })
+        if (!res.ok) throw new Error('Failed to load questions')
+        const data = await res.json()
+        const qs = data.questions || []
+        questions = qs.map(q => ({ q: q.q, options: q.options, answer: q.answer }))
+        explanations = qs.map(q => q.explanation || '')
+      } catch (err) {
+        // Fallback to embedded questions if API not available
+        console.warn('Using embedded questions (API unavailable):', err)
       }
-    })
-  })
-  elProgress.textContent = `Question ${index + 1} of ${questions.length}`
-  renderMap()
-}
+    }
 
-async function beginQuiz() {
-  // Load (randomized) questions from API with daily seed and default count
-  const dailySeed = new Date().toISOString().slice(0,10).replace(/-/g, '')
-  await loadQuestions({ count: 10, seed: dailySeed })
-  index = 0
-  correct = 0
-  start = performance.now()
-  userAnswers = []
-  elBreakdown.innerHTML = ''
-  elScreenHow.hidden = true
-  elScreenResult.hidden = true
-  elScreenQuiz.hidden = false
-  renderQuestion()
-  renderMap()
-}
+    const elQ = document.getElementById('question')
+    const elOpts = document.getElementById('options')
+    const elNext = document.getElementById('next')
+    const elSubmit = document.getElementById('submit')
+    const elProgress = document.getElementById('progress')
+    const elMeta = document.getElementById('meta')
+    const elScreenInfo = document.getElementById('screen-info')
+    const elScreenHow = document.getElementById('screen-how')
+    const elScreenQuiz = document.getElementById('screen-quiz')
+    const elScreenResult = document.getElementById('screen-result')
+    const elScore = document.getElementById('score')
+    const elFeedback = document.getElementById('feedback')
+    const elTime = document.getElementById('time')
+    const elRestart = document.getElementById('restart')
+    const elStart = document.getElementById('start')
+    const elBegin = document.getElementById('begin')
+    const elBreakdown = document.getElementById('breakdown')
+    const elMap = document.getElementById('qmap')
 
-function next() {
-  if (selected == null) return
-  if (selected === questions[index].answer) correct++
-  userAnswers[index] = selected
-  index++
-  if (index < questions.length) {
-    renderQuestion()
-    renderMap()
-    // rely on renderQuestion() to set button visibility and disabled states
-  }
-}
+    function renderMap() {
+      const total = questions.length
+      const items = []
+      for (let i = 0; i < total; i++) {
+        const done = userAnswers[i] != null
+        const current = i === index
+        const classes = ['item']
+        if (done) classes.push('done')
+        if (current) classes.push('current')
+        items.push(`<span class="${classes.join(' ')}" title="Question ${i + 1}">${i + 1}</span>`)
+      }
+      elMap.innerHTML = items.join(' ')
+    }
 
-function submit() {
-  if (selected == null) return
-  if (selected === questions[index].answer) correct++
-  userAnswers[index] = selected
-  const elapsed = Math.round((performance.now() - start) / 1000)
-  elScreenQuiz.hidden = true
-  elScreenResult.hidden = false
-  elScore.textContent = `${correct} / ${questions.length}`
-  let msg = ''
-  const pct = correct / questions.length
-  if (pct === 1) msg = 'Perfect understanding.'
-  else if (pct >= .8) msg = 'Strong grasp of the basics.'
-  else if (pct >= .6) msg = 'Good start, review the key concepts.'
-  else msg = 'Keep learning: revisit causes, impacts, and solutions.'
-  elFeedback.textContent = msg
-  elTime.textContent = `Completed in ${elapsed}s`
+    function renderQuestion() {
+      const q = questions[index]
+      elQ.textContent = q.q
+      elOpts.innerHTML = ''
+      selected = null
+      const isLast = index === questions.length - 1
+      elNext.hidden = isLast
+      elNext.disabled = true
+      elSubmit.disabled = true
+      q.options.forEach((opt, i) => {
+        const id = `q${index}-o${i}`
+        const wrap = document.createElement('label')
+        wrap.className = 'option'
+        const input = document.createElement('input')
+        input.type = 'radio'
+        input.name = 'option'
+        input.value = String(i)
+        input.id = id
+        const text = document.createElement('span')
+        text.textContent = opt
+        wrap.appendChild(input)
+        wrap.appendChild(text)
+        elOpts.appendChild(wrap)
+        input.addEventListener('change', () => {
+          selected = i
+          const isLast = index === questions.length - 1
+          if (isLast) {
+            elSubmit.disabled = false
+          } else {
+            elNext.disabled = false
+            elSubmit.disabled = true
+          }
+        })
+      })
+      elProgress.textContent = `Question ${index + 1} of ${questions.length}`
+      renderMap()
+    }
 
-  const items = questions.map((q, i) => {
-    const user = userAnswers[i]
-    const correctIdx = q.answer
-    const isOk = user === correctIdx
-    const yourAns = user != null ? q.options[user] : 'No answer'
-    const correctAns = q.options[correctIdx]
-    const expl = explanations[i]
-    return `<li class="${isOk ? 'correct' : 'wrong'}">
+    async function beginQuiz() {
+      // Load (randomized) questions from API without daily seed
+      await loadQuestions({ count: 10 })
+      index = 0
+      correct = 0
+      start = performance.now()
+      userAnswers = []
+      elBreakdown.innerHTML = ''
+      elScreenHow.hidden = true
+      elScreenResult.hidden = true
+      elScreenQuiz.hidden = false
+      renderQuestion()
+      renderMap()
+    }
+
+    function next() {
+      if (selected == null) return
+      if (selected === questions[index].answer) correct++
+      userAnswers[index] = selected
+      index++
+      if (index < questions.length) {
+        renderQuestion()
+        renderMap()
+        // rely on renderQuestion() to set button visibility and disabled states
+      }
+    }
+
+    function submit() {
+      if (selected == null) return
+      if (selected === questions[index].answer) correct++
+      userAnswers[index] = selected
+      const elapsed = Math.round((performance.now() - start) / 1000)
+      elScreenQuiz.hidden = true
+      elScreenResult.hidden = false
+      elScore.textContent = `${correct} / ${questions.length}`
+      let msg = ''
+      const pct = correct / questions.length
+      if (pct === 1) msg = 'Perfect understanding.'
+      else if (pct >= .8) msg = 'Strong grasp of the basics.'
+      else if (pct >= .6) msg = 'Good start, review the key concepts.'
+      else msg = 'Keep learning: revisit causes, impacts, and solutions.'
+      elFeedback.textContent = msg
+      elTime.textContent = `Completed in ${elapsed}s`
+
+      const items = questions.map((q, i) => {
+        const user = userAnswers[i]
+        const correctIdx = q.answer
+        const isOk = user === correctIdx
+        const yourAns = user != null ? q.options[user] : 'No answer'
+        const correctAns = q.options[correctIdx]
+        const expl = explanations[i]
+        return `<li class="${isOk ? 'correct' : 'wrong'}">
       <div class="question-text">${q.q}</div>
       <div class="pill">${isOk ? 'Correct' : 'Incorrect'}</div>
       <div>Your answer: ${yourAns}</div>
       <div>Correct answer: ${correctAns}</div>
       <div class="muted">${expl}</div>
     </li>`
-  }).join('')
-  elBreakdown.innerHTML = items
-}
+      }).join('')
+      elBreakdown.innerHTML = items
+    }
 
-function restart() {
-  elScreenResult.hidden = true
-  elScreenQuiz.hidden = true
-  elScreenHow.hidden = true
-  elScreenInfo.hidden = false
-  elBreakdown.innerHTML = ''
-}
+    function restart() {
+      elScreenResult.hidden = true
+      elScreenQuiz.hidden = true
+      elScreenHow.hidden = true
+      elScreenInfo.hidden = false
+      elBreakdown.innerHTML = ''
+    }
 
-elNext.addEventListener('click', (e) => { e.preventDefault(); next() })
-elSubmit.addEventListener('click', (e) => { e.preventDefault(); submit() })
-elRestart.addEventListener('click', (e) => { e.preventDefault(); restart() })
-elStart.addEventListener('click', (e) => { e.preventDefault(); beginQuiz() })
-elBegin.addEventListener('click', (e) => { e.preventDefault(); beginQuiz() })
+    elNext.addEventListener('click', (e) => { e.preventDefault(); next() })
+    elSubmit.addEventListener('click', (e) => { e.preventDefault(); submit() })
+    elRestart.addEventListener('click', (e) => { e.preventDefault(); restart() })
+    elStart.addEventListener('click', (e) => { e.preventDefault(); beginQuiz() })
+    elBegin.addEventListener('click', (e) => { e.preventDefault(); beginQuiz() })
 
-elMeta.textContent = `Prototype · Multiple choice · ${questions.length} questions`
-elScreenInfo.hidden = false
-elScreenHow.hidden = true
-elScreenQuiz.hidden = true
-elScreenResult.hidden = true
-</script>
+    elMeta.textContent = `Prototype · Multiple choice · ${questions.length} questions`
+    elScreenInfo.hidden = false
+    elScreenHow.hidden = true
+    elScreenQuiz.hidden = true
+    elScreenResult.hidden = true
+  </script>
 </body>
+
 </html>

@@ -46,8 +46,8 @@ def api_quiz_global_warming():
 
     seed = request.args.get('seed')
     if not seed:
-        # Daily seed by default to vary set each day
-        seed = datetime.date.today().strftime('%Y%m%d')
+        # Use random seed if none provided
+        seed = str(random.random())
     rng = random.Random(str(seed))
 
     # Shuffle pool, take count, then shuffle options per question

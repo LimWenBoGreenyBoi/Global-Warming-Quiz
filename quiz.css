@@ -15,7 +15,7 @@ h2 {margin: 18px 0 12px; font-size: 22px; color: #c9f7df; font-family: 'Playfair
 .controls {display: flex; gap: 10px; margin-top: 16px}
 button {appearance: none; border: 1px solid #1e6b57; background: #0d2f21; color: #d9f6e8; padding: 10px 14px; border-radius: 10px; font-weight: 600; cursor: pointer; transition: background .2s, border-color .2s, transform .06s}
 button:hover {background: #134632; border-color: #2bb673}
-button:active {transform: translateY(1px)}
+button:active {transform: scale(0.95)}
 button[disabled] {opacity: .6; cursor: not-allowed}
 .primary {background: #22c55e; color: #052e1b; border-color: #16a34a}
 .primary:hover {background: #27d368; border-color: #1ac164}

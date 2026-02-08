@@ -1,19 +1,29 @@
-# 🎈 Blank app template
+# 🌍 Global Warming Quiz
 
-A simple Streamlit app template for you to modify!
+A simple, interactive web-based quiz to learn about global warming, its causes, evidence, and solutions.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+## 🚀 How to Run
 
-### How to run it on your own machine
+This is a static website. You can run it with any static file server.
 
-1. Install the requirements
+### Using Python
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+```bash
+python -m http.server 8000
+```
 
-2. Run the app
+Then open [http://localhost:8000](http://localhost:8000) in your browser.
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+## 📂 Project Structure
+
+- `index.html`: Main landing page.
+- `global-warming-quiz.html`: The quiz application.
+- `quiz.css`: Green-themed styles.
+- `data/global_warming.json`: Quiz questions data (for reference/expansion).
+
+## 📝 Features
+
+- **Educational Info**: Learn about greenhouse gases, causes, and impacts before taking the quiz.
+- **Interactive Quiz**: 20+ questions to test your knowledge.
+- **Responsive Design**: Works on mobile and desktop.
+- **Green Theme**: Custom CSS for a nature-inspired look.
